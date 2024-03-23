@@ -24,7 +24,7 @@ def currency_converter(reporting_curr, amount, base_curr):
     
 #conv_sales("USD", 1, "PKR")
 def main():
-    st.title('Currency Converter')
+    st.title('Currency Converter by QZ')
 
     amount = st.number_input('Enter amount to convert', min_value=0.01, step=0.01, value=1.00)
     from_currency = st.selectbox('From Currency', exchange_rate('USD').keys())
